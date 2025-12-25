@@ -1,0 +1,21 @@
+一、下载Github仓库
+（一）获取仓库HTTPS链接
+（二）仓库下载
+cd /D/github # 转移到E盘的github目录下
+git clone https://github.com/ # 通过HTTPS链接克隆仓库到此文件夹下
+二、上传Github仓库
+（一）修改仓库文件
+cd ./project # 进入到创建的仓库文件目录下
+git add test.txt
+使用文件名添加指定文件到Git暂存区即可；
+但如果修改了多项文件，可以将文件名这里改为 . 即可将所有修改过的文件添加到暂存区。
+（二）提交仓库文件
+当文件存入暂存区后，还需要将修改项目从暂存区提交更改到本地仓库，
+这里需要使用git commit命令。
+git commit -m "for test" # 提交信息为for test
+使用-m参数可以添加字符串作为提交信息，即注释。出现以下返回结果说明提交成功。
+（三）推送仓库文件
+git push origin main
+
+
+日后同样使用Git的add、commit和push这三个命令按同样原理上传文件（仓库）即可。
